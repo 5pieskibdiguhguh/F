@@ -127,7 +127,7 @@ table.insert(cors,sandbox(LocalScript3,function()
 	objval=nil
 	local hooked=false 
 	local hookBP=BP:clone() 
-	hookBP.maxForce=_VTR_new(25555555555,25555555555,25555555555) 
+	hookBP.maxForce=_VTR_new(math.huge,math.huge,math.huge) 
 
 	local LineConnect=function(part1,part2,parent)
 		local p1=_Ins("ObjectValue")
